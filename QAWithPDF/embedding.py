@@ -1,7 +1,8 @@
 from llama_index.core import VectorStoreIndex
 from llama_index.embeddings.gemini import GeminiEmbedding
 from llama_index.core import StorageContext, load_index_from_storage
-
+from llama_index.core import Settings
+from llama_index.core.node_parser import SentenceSplitter
 
 
 import sys
@@ -49,10 +50,14 @@ def download_gemini_embedding(model, document):
         index = VectorStoreIndex.from_documents(
             document, embed_model=gemini_embed_model, llm=model
         )
+        Settings.llm = model
+        Settings.embed_model = gemini_embed_model
+        Settings.node_parser = SentenceSplitter(chunk_size=800, chunk_overlap=80)
         index.storage_context.persist()
 
         logging.info("")
-        query_engine = index.as_query_engine()
+        # query_engine = index.as_query_engine()
+        query_engine = index.as_chat_engine()
         return query_engine
     except Exception as e:
         raise customexception(e, sys)

@@ -1,0 +1,27 @@
+[2024-12-09 16:43:59,824] 25 root - INFO - data loading started...
+[2024-12-09 16:44:00,280] 29 root - INFO - data loading completed...
+[2024-12-09 16:44:01,973] 47 root - INFO - 
+[2024-12-09 16:44:22,140] 54 root - INFO - 
+[2024-12-09 16:44:24,105] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:24,106] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 0.404135 seconds
+[2024-12-09 16:44:24,772] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:24,773] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 0.926373 seconds
+[2024-12-09 16:44:25,956] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:25,956] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 1.835613 seconds
+[2024-12-09 16:44:28,049] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:28,055] 65 llama_index.llms.openai.utils - WARNING - Retrying llama_index.llms.openai.base.OpenAI._chat in 0.47401265984846364 seconds as it raised RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}.
+[2024-12-09 16:44:28,791] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:28,792] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 0.499947 seconds
+[2024-12-09 16:44:29,548] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:29,549] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 0.751166 seconds
+[2024-12-09 16:44:30,552] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:30,553] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 1.925639 seconds
+[2024-12-09 16:44:32,739] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:32,740] 65 llama_index.llms.openai.utils - WARNING - Retrying llama_index.llms.openai.base.OpenAI._chat in 1.6714881423871528 seconds as it raised RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}.
+[2024-12-09 16:44:34,674] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:34,675] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 0.493816 seconds
+[2024-12-09 16:44:35,422] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:35,423] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 0.796045 seconds
+[2024-12-09 16:44:36,471] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-12-09 16:44:36,472] 1089 openai._base_client - INFO - Retrying request to /chat/completions in 1.670692 seconds
+[2024-12-09 16:44:38,423] 1025 httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"

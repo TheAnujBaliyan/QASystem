@@ -23,11 +23,11 @@ def load_data(data):
     """
     try:
         logging.info("data loading started...")
-        loader = SimpleDirectoryReader("Data")
-        # loader = SimpleDirectoryReader(data)
-        document = loader.load_data()
+        # loader = SimpleDirectoryReader("Data")
+        loader = SimpleDirectoryReader("./Data")
+        documents = loader.load_data()
         logging.info("data loading completed...")
-        return document
+        return documents
     except Exception as e:
         logging.info("exception in loading data...")
         raise customexception(e, sys)

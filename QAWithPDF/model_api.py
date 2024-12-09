@@ -19,7 +19,7 @@ from logger import logging
 load_dotenv()
 
 GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY")
-
+# OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 def load_model():
